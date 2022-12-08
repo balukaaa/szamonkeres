@@ -1,24 +1,48 @@
-#content{
-	width: 888px;
+body {
+    font-family:Verdana, sans-serif;
 }
-#imageright{
-	margin-left: 20px;
+
+.container {
+    box-shadow:  5px 5px 10px 10px tomato;
+    padding: 50px;
 }
-h1,h2{
-    color: forestgreen;
+
+header>h3 {
+    font-style  : italic;
+    font-size   : 14pt;
 }
-#imageleft{
-	margin-right: 40px;
-    margin-bottom: 80px;
+
+img {
+    margin: 10px;
+    border: 2px solid tomato;
+    padding: 1px;
+    width: 100%;
+    border-radius:5px;
 }
-.kepszoveg{
-	font-weight: bold;
+
+.foto {
+    width: 250px;
+    margin-right: 20px;
+}
+
+.navbar div {
+    border-bottom: 5px solid tomato;
+    justify-content: space-around;
+}
+
+.kiemel {
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid tomato;
+    clear:both;
+}
+
+.kepalairas {
+    text-align: center;
     font-style: italic;
-}
-a{
-    color: black;
-    text-decoration: none;
-}
-a:hover{
-    color: red;
+    font-weight:bold;
 }
