@@ -58,14 +58,17 @@ td:first-child{
     text-align: right;
     font-weight: bold;
     color: darkblue;
+
 }
 td:nth-child(2){
     font-style: italic;
+
 }
 
 p{
     text-align: justify;
     padding: 5px;
+    text-indent: 25px;
 }
 figure{
     background-color: rgba(222,226,230,35%);
@@ -83,6 +86,8 @@ blockquote{
     background-color: rgba(222,226,230,35%);
     font-style: italic;
     border-radius: 20px;
+    padding: 10px;
+    font-size: 90%;
 }
 
 #halLista{
@@ -90,6 +95,7 @@ blockquote{
     list-style-type: none;
     padding-left: 0px;
     margin-left: 0px;
+    float: right;
 }
 
 #halLista li {
