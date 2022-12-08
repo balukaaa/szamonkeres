@@ -19,14 +19,14 @@ halak['csuka'] = new Hal("Csuka","Esox lucius","csukesz, közcsuka, mátyáscsuk
 halak['compo'] = new Hal("Compó","Tinca tinca","doktorhal, cigányhal","https://hu.wikipedia.org/wiki/Compó","compo.jpg");
 halak['fejes'] = new Hal("Fejes domolykó","Squalius cephalus",null,"https://hu.wikipedia.org/wiki/Fejes_domolykó","fejes.jpg");
 halak['garda'] = new Hal("Garda","Pelecus cultratus"," sugár kardos (némely forrásokban egybeírva), balatoni hering, kardkeszeg, karda, szabóhal, vezérgarda","https://hu.wikipedia.org/wiki/Garda_(halfaj)","garda.jpg");
-halak['harcsa'] = new Hal("Európai harcsa","Silurus glanis", "harcsa, leső harcsa, pozsárharcsa, pumaharcsa, sárgaharcsa, tőkésharcsa, köves harcsa, sebes harcsa, szürke harcsa, szőke harcsa, parasztfaló, kupri, kupak, kuppancs","https://hu.wikipedia.org/wiki/Európai_harcsa","harcsa.jpg")
+halak['harcsa'] = new Hal("Európai harcsa","Silurus glanis", "harcsa, leső harcsa, pozsárharcsa, pumaharcsa, sárgaharcsa, tőkésharcsa, köves harcsa, sebes harcsa, szürke harcsa, szőke harcsa, parasztfaló, kupri, kupak, kuppancs","https://hu.wikipedia.org/wiki/Európai_harcsa","halak/harcsa.jpg")
 
 function halinfo(hal){
     document.getElementById('sugo').style.display='none';
     document.getElementById('halURL').href=halak[hal].wikiUrl;
     document.getElementById('halURL').alt=halak[hal].fajMagyar+" képe";
     document.getElementById('halURL').title=halak[hal].fajMagyar+" Wikipédia oldala";
-    document.getElementById('halKep').src=halak[hal].halak;
+    document.getElementById('halKep').src=halak[hal].kepFajl;
     document.getElementById('halNevek').innerHTML="<b>"+halak[hal].fajMagyar+" <i>("+halak[hal].fajLatin+")</i></b>";
     if(halak[hal].egyebNevek == null) {
         document.getElementById('halNevek').innerHTML+="<br>Egyéb elnevezés(ek):<br>"+halak[hal].egyebNevek;
