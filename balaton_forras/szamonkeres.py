@@ -1,10 +1,20 @@
 """
+nev = input("Vezetéknév: ")
+nev1 = input("Keresztmév: ")
+print(nev,nev1)
+print(nev1,nev)
+
+szam0 = int(input("Adj egy számot: "))
+print(szam0 - 1)
+print(szam0 + 1)
+
+
 szam1 = int(input("Kérek egy számot: "))
 szam2 = int(input("Kérek egy számot: "))
 print("A két szám összege:",(szam1 + szam2))
 print("A két szám különbsége:", (szam1 - szam2))
 print("A két szám szorzata:" ,(szam1 * szam2))
-print("A két szám hányadosa:" (szam1 % szam2))
+print("A két szám hányadosa:" (szam1 / szam2))
 
 #4Feladat
 szam = int(input("Kérek egy számot: "))
@@ -25,14 +35,7 @@ print()
 print("Páratlan számok 1-20-ig")
 for szam1 in range(1,21):
     if szam1 % 2 == 1:
-        print(szam1,end=",")
-   """     
-
-#6Feledat
-
-n = int(input("Hány számot szertnél: "))
-for j in range(n):
-    input("szam:")  
+        print(szam1,end=",")  
 
 """
 #7Feledat
@@ -47,4 +50,3 @@ for x in list:
     i += 1
 
 print(sum, sum/i)
-"""
